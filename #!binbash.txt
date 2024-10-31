@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in {1..254}; do
+    ping -c 1 -W 1 10.160.20.$i &> /dev/null && echo "Host 10.160.20.$i is up"
+done
